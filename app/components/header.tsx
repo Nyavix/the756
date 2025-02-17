@@ -1,0 +1,58 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import logo from '../../public/graphics/756-Logo.png';
+
+const Menus = ["/", "about", "portfolio", "services", "contact"];
+
+interface HeaderProps {
+    currentPage: string;
+}
+
+function Header({ currentPage = "" }: HeaderProps) {
+    const [scrolled, setScrolled] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        const handleScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const formattedPage = currentPage === "/" ? "home" : currentPage;
+
+    return (
+        <header className="fixed w-full">
+            <div className={`flex justify-center transition-all duration-500 ease-in-out items-center ${
+                mounted ? (scrolled ? "gap-40 p-4 bg-black bg-opacity-50" : "gap-80 p-16 text-white") : ""
+            }`}>
+                <div className="hover:animate-pulse">
+                    <Link href="/">
+                        <Image src={logo} alt="Logo" width={50} height={50} />
+                    </Link>
+                </div>
+                <nav className="w-1/3 flex justify-between items-center p-2">
+                    {Menus.map((Menu: string, i: number) => (
+                        <Link 
+                            key={i} 
+                            href={Menu === "/" ? "/" : `/${Menu}`}
+                            className={`capitalize transition ease-in-out hover:scale-110 ${formattedPage === Menu ? 'underline' : ''}`}
+                        >
+                            {Menu === "/" ? "home" : Menu}
+                        </Link>
+                    ))}
+                </nav>
+                <div className="transition ease-in-out hover:scale-110">
+                    <Link href="/" className="border-2 border-white p-4 rounded-full">
+                        Work With Us
+                    </Link>
+                </div>
+            </div>
+        </header>
+    );
+}
+
+export default Header;
