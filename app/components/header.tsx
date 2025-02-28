@@ -25,16 +25,16 @@ function Header({ currentPage = "" }: HeaderProps) {
     const formattedPage = currentPage === "/" ? "home" : currentPage;
 
     return (
-        <header className="fixed w-full">
+        <header className="fixed w-screen z-10">
             <div className={`flex justify-center transition-all duration-500 ease-in-out items-center ${
                 mounted ? (scrolled ? "gap-40 p-4 bg-black bg-opacity-50" : "gap-80 p-16 text-white") : ""
             }`}>
-                <div className="hover:animate-pulse">
+                <div className="flex justify-center hover:animate-pulse w-1/4">
                     <Link href="/">
                         <Image src={logo} alt="Logo" width={50} height={50} />
                     </Link>
                 </div>
-                <nav className="w-1/3 flex justify-between items-center p-2">
+                <nav className="w-1/2 flex justify-between items-center mx-2 p-2 font-medium">
                     {Menus.map((Menu: string, i: number) => (
                         <Link 
                             key={i} 
@@ -45,8 +45,8 @@ function Header({ currentPage = "" }: HeaderProps) {
                         </Link>
                     ))}
                 </nav>
-                <div className="transition ease-in-out hover:scale-110">
-                    <Link href="/" className="border-2 border-white p-4 rounded-full">
+                <div className="flex justify-center transition ease-in-out hover:scale-110 w-1/4">
+                    <Link href="/" className="font-bold font-main border-2 border-white p-4 rounded-full">
                         Work With Us
                     </Link>
                 </div>

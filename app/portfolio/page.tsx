@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Footer from "../components/footer";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -11,15 +12,35 @@ import spotifyLogo from "../../public/graphics/Spotify.png";
 import musoLogo from "../../public/graphics/MusoAI.png";
 import soundcloudLogo from "../../public/graphics/Soundcloud.png";
 import youtubeLogo from "../../public/graphics/YoutubeRed.png";
+import { BiArrowToRight } from "react-icons/bi";
+import ccThumb from "../../public/graphics/YT-Thumbs/ChequetoCheque-Thumb.png";
+import mtThumb from "../../public/graphics/YT-Thumbs/MasteringTemplate-Thumb.png";
 
 export default function portfolio() {
     return (
-        <div className="overflow-clip">
+        <div className="overflow-clip font-main">
             <Header currentPage="portfolio" />
-            <section className="h-screen w-screen bg-bannerMarImg bg-repeat bg-cover bg-bottom">
+            <section className="h-screen w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
                 <div className="flex justify-center items-center w-full h-screen px-16 bg-blackOverlay">
-                    <div className="w-1/2">
-                        <h1>portfolio</h1>
+                    <div className="w-1/2 p-16">
+                        <h1 className="text-2xl py-8 font-bold">Bringing Your Sound to Life</h1>
+                        <p className="text-1xl py-8 ">
+                            At The 756, we don’t just produce music—we craft sonic experiences. 
+                            Our team of passionate producers, engineers, and artists work tirelessly 
+                            to ensure that every project reaches its full potential. From raw ideas 
+                            to radio-ready records, we handle everything from production to mixing 
+                            and mastering with precision and creativity.
+                        </p>
+                        <p>
+                            Our Work Speaks for Itself.
+                        </p>
+                        <div className="flex justify-between items-center gap-10 py-8">
+                            <p>
+                                Check out some of the projects we&apos;ve worked on
+                            </p>
+                            <BiArrowToRight size={32} />
+                        </div>
+                        
                     </div>
                     <div className="w-1/2 flex flex-col justify-center items-center h-screen shadow-xl">
                         <nav className="flex justify-center items-center gap-24 p-8 w-fit">
@@ -91,6 +112,31 @@ export default function portfolio() {
                     music.
                 </p>
             </section>
+
+            <section className="h-screen w-screen bg-bannerAltImg bg-repeat bg-cover bg-bottom">
+                <div className="flex flex-col justify-center items-center w-full h-screen px-16 bg-blackOverlay shadow-inner">
+                    <div className="text-white text-4xl py-8 font-bold">  
+                        <h1>Checkout Our Engineering Breakdowns</h1>
+                    </div>
+                    <div>
+                        <p className="text-white text-1xl py-8 px-48">
+                            Our engineering breakdowns provide an in-depth look at the process behind the music. 
+                            From the initial idea to the final mix, we take you through every step of the production 
+                            process, giving you a behind-the-scenes look at how we bring your sound to life.
+                        </p>
+                    </div>
+                    <div className="flex justify-between items-center gap-10">
+                        <Link rel="stylesheet" href="https://www.youtube.com/watch?v=Zo7z3vFI3Y8" className="transition ease-in-out hover:scale-105">
+                            <Image src={ccThumb} alt="CCThumb" width={400}/>
+                        </Link>
+                        <Link rel="stylesheet" href="https://www.youtube.com/watch?v=nxdfgA8DS6g&t=198s" className="transition ease-in-out hover:scale-105">
+                            <Image src={mtThumb} alt="MTThumb" width={400}/>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <Footer/>
         </div>
     );
 }

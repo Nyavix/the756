@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 512">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        fill: url(#radial-gradient);
+      }
+
+      .st4 {
+        display: none;
+      }
+
+      .st1 {
+        font-size: 71.96px;
+      }
+
+      .st1, .st2 {
+        font-family: GillSansMT-Bold, 'Gill Sans MT';
+        font-weight: 700;
+      }
+
+      .st2 {
+        font-size: 85.01px;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="527.9" cy="356.21" fx="527.9" fy="356.21" r="414.62" gradientTransform="translate(0 12.85) scale(1 .69)" gradientUnits="userSpaceOnUse">
+      <stop offset=".04" stop-color="#393839"/>
+      <stop offset="1" stop-color="#231f20"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_3" class="st4">
+    <rect class="st3" x="113.28" y="-27.23" width="829.25" height="569.11" rx="82.47" ry="82.47"/>
+  </g>
+  <g id="The756">
+    <g>
+      <text class="st1" transform="translate(188.61 95.15) scale(1.14 1)"><tspan x="0" y="0">THE</tspan></text>
+      <g>
+        <path class="st0" d="M188.31,132.48h223.38l-187.2,332.21h-39.81l161.96-290.15-158.33-1.24v-40.81Z"/>
+        <path class="st0" d="M446.66,132.99h162.66l-.99,41.14h-145.33l-40.06,75.96c3.28-.31,41.71-16.88,77.13-17.88,31.65-.89,63.77,8.99,91.04,42.37,16.22,19.86,25.16,42.37,25.16,68.86,0,30.73-11.59,68.03-30.46,85.74-29.96,28.12-58.24,35.5-90.38,35.5-45.02,0-99.97-32.86-115.86-83.17l35.42-22.84c8.28,46.68,62.12,69.52,84.58,69.52,19.66,0,38.13-7.4,51.47-18.87,13.34-11.47,30.87-30.79,30.87-67.53s-20.3-55.07-37.16-62.9c-32.11-14.9-51.48-8.61-112.33,6.53-18.02,4.48-34.73,7.75-65.61,15.5l79.83-167.94Z"/>
+      </g>
+      <path class="st0" d="M763.5,234.2c-63.62,0-115.2,51.58-115.2,115.2s51.58,115.2,115.2,115.2,115.2-51.58,115.2-115.2-51.58-115.2-115.2-115.2ZM763.5,430.86c-44.99,0-81.46-36.47-81.46-81.46s36.47-81.46,81.46-81.46,81.46,36.47,81.46,81.46-36.47,81.46-81.46,81.46Z"/>
+      <path class="st0" d="M831.96,202.29c11.09-5.75,23.25-9.74,36.1-11.58-21.88-34.68-60.52-57.72-104.56-57.72-68.26,0-123.6,55.34-123.6,123.6,0,11.05,1.47,21.75,4.19,31.94,8.94-13.34,19.76-25.31,32.1-35.51,1.87-46.61,40.24-83.83,87.31-83.83,27.75,0,52.46,12.94,68.46,33.1Z"/>
+    </g>
+  </g>
+  <g id="Layer_5" class="st4">
+    <text class="st2" transform="translate(335.52 432.89)"><tspan x="0" y="0">STUDIO</tspan></text>
+  </g>
+  <g id="Layer_4" class="st4">
+    <g>
+      <rect class="st0" x="335.52" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="361.05" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="387.78" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="413.82" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="437.99" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="463.52" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="490.24" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="515.01" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="539.78" y="304.17" width="11.06" height="122.55"/>
+      <rect class="st0" x="625.56" y="248.43" width="11.06" height="122.55" rx="5.53" ry="5.53" transform="translate(940.8 -321.39) rotate(90)"/>
+      <rect class="st0" x="625.56" y="359.91" width="11.06" height="122.55" rx="5.53" ry="5.53" transform="translate(1052.29 -209.9) rotate(90)"/>
+      <rect class="st0" x="625.56" y="304.17" width="11.06" height="122.55" rx="5.53" ry="5.53" transform="translate(996.54 -265.65) rotate(90)"/>
+      <rect class="st0" x="625.56" y="277.68" width="11.06" height="122.55" rx="5.53" ry="5.53" transform="translate(970.05 -292.14) rotate(90)"/>
+      <rect class="st0" x="625.56" y="330.66" width="11.06" height="122.55" rx="5.53" ry="5.53" transform="translate(1023.03 -239.16) rotate(90)"/>
+    </g>
+  </g>
+  <g id="Layer_6" class="st4">
+    <g>
+      <rect class="st0" x="334.07" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="359.61" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="386.33" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="412.37" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="436.54" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="462.07" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="488.8" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="513.56" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="538.33" y="308.38" width="11.06" height="55.41"/>
+      <rect class="st0" x="627.15" y="249.6" width="5" height="122.55" rx="2.5" ry="2.5" transform="translate(940.53 -318.77) rotate(90)"/>
+      <rect class="st0" x="627.15" y="300.01" width="5" height="122.55" rx="2.5" ry="2.5" transform="translate(990.94 -268.36) rotate(90)"/>
+      <rect class="st0" x="627.15" y="274.81" width="5" height="122.55" rx="2.5" ry="2.5" transform="translate(965.73 -293.57) rotate(90)"/>
+      <rect class="st0" x="627.15" y="262.83" width="5" height="122.55" rx="2.5" ry="2.5" transform="translate(953.75 -305.54) rotate(90)"/>
+      <rect class="st0" x="627.15" y="286.78" width="5" height="122.55" rx="2.5" ry="2.5" transform="translate(977.71 -281.59) rotate(90)"/>
+    </g>
+  </g>
+</svg>
