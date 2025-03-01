@@ -27,7 +27,7 @@ export default function Home() {
         <Header currentPage="home" />
         <div className="flex flex-col justify-center items-center w-full h-screen bg-blackOverlay">
           <Image src={logoHori} alt="The 756" width={500}/>
-          <p className="text-white text-1xl mx-96 my-4 text-center animate-title">Shaping the future of music with boundless creativity and unstoppable energy.</p>
+          <p className="text-white text-1xl p-8 text-center animate-title">Shaping the future of music with boundless creativity and unstoppable energy.</p>
         
           <div className="absolute flex justify-between w-1/5 bottom-0 left-0 p-16">
             <Link rel="stylesheet" href="/" className="transition ease-in-out hover:scale-110">
@@ -89,8 +89,8 @@ export default function Home() {
               recording, mixing, and mastering services ensure 
               your sound stands out.</p>
           </div>
-          <div className="flex justify-between items-start gap-10">
-            <div className="w-1/3 flex flex-col justify-center items-center">
+          <div className=" flex md:flex-row flex-col justify-center items-start gap-10">
+            <div className=" w-1/3 flex flex-col justify-center items-center">
               <Image src={mic} alt="Mic" width={300}/>
               <h1 className="font-bold text-2xl py-4">Professional Recording Services Tailored for You</h1>
               <p className="text-sm">Capture your music in a pristine environment.</p>
