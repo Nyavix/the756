@@ -17,13 +17,13 @@ export default function about() {
     return (
         <div className="overflow-clip font-main">
             <Header currentPage="about"  />
-            <section className="h-auto w-screen bg-bannerAltImg bg-repeat bg-cover bg-bottom">
+            <section className="h-auto w-screen bg-black bg-repeat bg-cover bg-bottom">
 
-                <div className="flex justify-center items-center w-full h-screen pt-36 px-16 bg-blackOverlay">
-                    <div className="px-16 bg-black bg-opacity-30 rounded-2xl">
+                <div className="flex justify-center items-center w-full pt-36 md:px-16 bg-blackOverlay">
+                    <div className="md:px-16 bg-black bg-opacity-30 rounded-2xl">
                         <h1 className="text-4xl text-center py-8 font-bold">Meet The Team</h1>
-                        <div className="shadow-inner flex justify-between items-center gap-10 px-6 py-8">
-                            <div className="flex flex-col justify-center items-center w-1/4">
+                        <div className="shadow-inner flex md:flex-row flex-col justify-between items-center gap-10 px-6 py-8">
+                            <div className="flex flex-col justify-center items-center md:w-1/4">
                                 <Image src={Drew} alt="Drew" width={200} className="shadow-xl py-4"/>
                                 <p className="py-2 font-bold">
                                     Drew Matousek
@@ -38,7 +38,7 @@ export default function about() {
                                     collaborator, turning visions into reality.
                                 </p>
                             </div>
-                            <div className="flex flex-col justify-center items-center w-1/4">
+                            <div className="flex flex-col justify-center items-center md:w-1/4">
                                 <Image src={Taz} alt="Taz" width={200} className="shadow-xl py-4"/>
                                 <p className="py-2 font-bold">
                                     Taz Maclean
@@ -52,7 +52,7 @@ export default function about() {
                                 to every project, crafting dynamic compositions that resonate with authenticity and emotion.
                                 </p>
                             </div>
-                            <div className="flex flex-col justify-center items-center w-1/4">
+                            <div className="flex flex-col justify-center items-center md:w-1/4">
                                 <Image src={Deus} alt="Deus" width={200} className="shadow-xl py-4"/>
                                 <p className="py-2 font-bold">
                                     Deus
@@ -66,7 +66,7 @@ export default function about() {
                                 precision, ensuring every track reaches its full potential and resonates at the highest level. 
                                 </p>
                             </div>
-                            <div className="flex flex-col justify-between items-center w-1/4 py-4">
+                            <div className="flex flex-col justify-between items-center md:w-1/4 py-4">
                                 <Image src={Nvikelo} alt="Nvikelo" width={200} className="shadow-xl py-4"/>
                                 <p className="py-2 font-bold">
                                     Nvikelo Nyathi
@@ -89,13 +89,13 @@ export default function about() {
 
             <section className="w-screen bg-black">
                 <div className="flex justify-center items-center w-full px-16 bg-blackOverlay">
-                    <div className="p-16 bg-black bg-opacity-30 rounded-2xl">
+                    <div className="md:p-16 bg-black bg-opacity-30 rounded-2xl">
                         <h1 className="text-4xl text-center py-8 font-bold">Our Studio</h1>
-                        <div className="shadow-inner flex justify-between items-center gap-10 px-6 py-8">
-                            <div className="flex flex-col justify-center items-center  w-1/2">
+                        <div className="shadow-inner flex flex-col justify-between items-center gap-10 px-6 py-8">
+                            <div className="flex flex-col justify-center items-center md:w-1/2">
                                 <Image src={Studio} alt="Studio" width={700} className="shadow-xl"/>
                             </div>
-                            <div className="flex flex-col justify-center items-center w-1/2">
+                            <div className="flex flex-col justify-center items-center md:w-1/2">
                                 <p className="py-2 font-bold">
                                     The 756 Studios
                                 </p>
