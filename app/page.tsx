@@ -48,9 +48,9 @@ export default function Home() {
       </section>
       
       <section className="w-screen bg-gradient-to-b from-black to-SandyBrownDarkest">
-        <div className="flex justify-center items-center w-full px-16">
-          <div className="flex justify-between items-center max-w-screen-xl py-16">
-            <div className="w-1/2 p-16">
+        <div className="flex justify-center items-center w-full md:px-16">
+          <div className="flex md:flex-row flex-col-reverse justify-center items-center max-w-screen-xl md:py-16">
+            <div className="md:w-1/2 md:p-16 p-4">
               <div className="py-8">
                 <h1 className="font-bold text-2xl py-2">Welcome to The 756 Studio: Where Your Sound Comes to Life</h1>
                 <p>At The 756 Studio, we combine cutting-edge technology with a passion 
@@ -73,7 +73,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className="md:w-1/2 py-6 flex justify-center">
               <Image src={singer} alt="Singer" width={500} className="shadow-lg"/>
             </div>
           </div>
@@ -89,18 +89,18 @@ export default function Home() {
               recording, mixing, and mastering services ensure 
               your sound stands out.</p>
           </div>
-          <div className=" flex md:flex-row flex-col justify-center items-start gap-10">
-            <div className=" w-1/3 flex flex-col justify-center items-center">
+          <div className="flex md:flex-row flex-col justify-center items-center gap-8">
+            <div className="md:w-1/3 flex flex-col justify-center items-center">
               <Image src={mic} alt="Mic" width={300}/>
               <h1 className="font-bold text-2xl py-4">Professional Recording Services Tailored for You</h1>
               <p className="text-sm">Capture your music in a pristine environment.</p>
             </div>
-            <div className="w-1/3 flex flex-col justify-center items-center">
+            <div className="md:w-1/3 flex flex-col justify-center items-center">
               <Image src={mixing} alt="Mixing" width={300}/>
               <h1 className="font-bold text-2xl py-4">Expert Mixing for a Perfect Balance</h1>
               <p className="text-sm">We blend your tracks to create a cohesive sound.</p>
             </div>
-            <div className="w-1/3 flex flex-col justify-center items-center">
+            <div className="md:w-1/3 flex flex-col justify-center items-center">
               <Image src={mastering} alt="Mastering" width={300}/>
               <h1 className="font-bold text-2xl py-4">Mastering Services for Industry-Ready Tracks</h1>
               <p className="text-sm">Ensure your music meets industry standards with our mastering.</p>
@@ -115,8 +115,8 @@ export default function Home() {
       </section>
         
       <section className="w-screen bg-gradient-to-b from-zinc-950 to-Crail flex justify-center items-center">
-      <div className="flex justify-center items-center max-w-screen-xl p-16">
-          <div className="w-1/2 flex flex-col justify-center m-8">
+      <div className="flex md:flex-row flex-col justify-center items-center max-w-screen-xl md:p-16">
+          <div className="md:w-1/2 flex flex-col justify-center m-8">
             <h1 className="py-16 font-bold text-4xl">Experience Unmatched Sound Quality at The 756</h1>
             <p>At The 756 Studio, we provide a professional environment that fosters creativity 
               and collaboration. Our state-of-the-art equipment ensures that every note is 
@@ -128,13 +128,13 @@ export default function Home() {
                 </Link>
               </div>
               <div className="transition ease-in-out hover:scale-110">
-                <Link href="/portfolio" className="p-2">
+                <Link href="/contact" className="p-2">
                   Contact
                 </Link>
               </div>
             </div>
           </div>
-          <div className="w-1/2 flex justify-center">
+          <div className="md:w-1/2 flex justify-center">
             <Image src={taz} alt="Taz" width={500} className="shadow-lg"/>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
 
       <section className="w-screen h-96 bg-bannerMarImg bg-repeat bg-cover bg-top">
         <div className="flex justify-center items-center w-screen h-full bg-blackOverlay">
-          <div>
+          <div className="px-4">
                 <h1 className="text-4xl py-8 font-bold">Book Your Session Today</h1>
                 <p>Unlock your sound potential with our expert recording and production 
                   services. Let&apos;s create something amazing!</p>
