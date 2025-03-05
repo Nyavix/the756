@@ -37,7 +37,7 @@ function Header({ currentPage = "" }: HeaderProps) {
 
             {/* Mobile Header */}
             <div className={`flex md:hidden justify-between items-center transition-all duration-500 ease-in-out gap-4 p-4 ${
-                mounted ? (scrolled ? "bg-black px-8" : "py-8 px-8 bg-black") : ""
+                mounted ? (scrolled ? "bg-black px-8" : "py-6 px-8 bg-black") : ""
             }`}>
                 <div className="flex justify-center">
                     <Link href="/">
@@ -50,13 +50,13 @@ function Header({ currentPage = "" }: HeaderProps) {
                     </button>
                 </div>
             </div>
-            <div className={`md:hidden bg-black py-4 transition-all duration-300 ease-in-out ${isOpen ? "" : "translate-x-full"}`}>
+            <div className={`md:hidden bg-black py-1 transition-all duration-300 ease-in-out ${isOpen ? "bg-opacity-100 " : "-translate-y-96 bg-opacity-0"}`}>
                 <nav className="flex flex-col justify-center items-center lg:gap-8 gap-6 font-medium">
                     {Menus.map((Menu: string, i: number) => (
                         <Link 
                             key={i} 
                             href={Menu === "/" ? "/" : `/${Menu}`}
-                            className={`capitalize transition ease-in-out hover:scale-110 ${formattedPage === Menu ? 'underline' : ''}`}
+                            className={`border w-1/2 py-1 text-center capitalize transition ease-in-out hover:scale-110 ${formattedPage === Menu ? 'underline' : ''}`}
                         >
                             {Menu === "/" ? "home" : Menu}
                         </Link>

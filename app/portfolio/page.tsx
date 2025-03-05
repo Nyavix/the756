@@ -20,11 +20,11 @@ export default function portfolio() {
     return (
         <div className="overflow-clip font-main">
             <Header currentPage="portfolio" />
-            <section className="h-screen w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
-                <div className="flex justify-center items-center w-full h-screen px-16 bg-blackOverlay">
-                    <div className="w-1/2 p-16">
-                        <h1 className="text-2xl py-8 font-bold">Bringing Your Sound to Life</h1>
-                        <p className="text-1xl py-8 ">
+            <section className=" w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
+                <div className="flex md:flex-row flex-col justify-center items-center w-full md:px-16 bg-blackOverlay">
+                    <div className="md:w-1/2 md:-translate-y-12 translate-y-12 px-8 py-16">
+                        <h1 className="text-2xl py-8 font-bold drop-shadow-md">Bringing Your Sound to Life</h1>
+                        <p className="text-1xl py-8 drop-shadow-md">
                             At The 756, we don’t just produce music—we craft sonic experiences. 
                             Our team of passionate producers, engineers, and artists work tirelessly 
                             to ensure that every project reaches its full potential. From raw ideas 
@@ -42,7 +42,7 @@ export default function portfolio() {
                         </div>
                         
                     </div>
-                    <div className="w-1/2 flex flex-col justify-center items-center h-screen shadow-xl">
+                    <div className="md:w-1/2 flex flex-col justify-center items-center md:py-36 py-4 shadow-xl">
                         <nav className="flex justify-center items-center gap-24 p-8 w-fit">
                             <Link rel="stylesheet" href="https://open.spotify.com/playlist/074YJaBM2Nq0jQhtPpmW6h?si=qaIOrW-bTouzx8NygX3z5Q&pi=ky9yuNrAQN6Qj"  
                                 className="transition ease-in-out hover:scale-110">
@@ -79,38 +79,40 @@ export default function portfolio() {
             </section>
 
             <section className="h-3/4 w-screen flex justify-center flex-col items-center bg-bannerAltImg bg-repeat bg-cover bg-bottom">
-                <h1 className="text-white text-6xl p-6">
-                    Happy Clients
-                </h1>
-                <nav className="flex justify-center items-center gap-10 w-full">
-                    <div className="transition ease-in-out hover:scale-110">
-                        <Image src={chainS} alt="TheChainsmokers" width={200} height={200} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-110">
-                    <Image src={bludN} alt="Bludnymph" width={200} height={200} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-110">
-                    <Image src={dizzy} alt="DizzyIsDead" width={200} height={200} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-110">
-                    <Image src={complete} alt="Complete" width={200} height={200} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-110">
-                    <Image src={teonG} alt="TeonGibbs" width={200} height={200} />
-                    </div>
-                </nav>
-                <p className="text-white text-1xl p-8 mx-96">
-                    Every song has a story—our
-                    job is to make sure yours is
-                    heard in its purest, most
-                    powerful form. At The 756, we
-                    provide a professional space
-                    where creativity flourishes
-                    and sound quality is uncompromising. From production to
-                    mixing and mastering, we handle every detail so you can
-                    focus on what matters: the
-                    music.
-                </p>
+                <div className="bg-blackOverlay w-full h-full flex flex-col justify-center items-center">
+                    <h1 className="text-white text-6xl p-6">
+                        Happy Clients
+                    </h1>
+                    <nav className="md:flex md:flex-row grid grid-auto-flow:row grid-cols-2 grid-rows-3 justify-center items-center gap-10 w-full">
+                        <div className="transition ease-in-out hover:scale-110">
+                            <Image src={chainS} alt="TheChainsmokers" width={200} height={200} />
+                        </div>
+                        <div className="transition ease-in-out hover:scale-110">
+                        <Image src={bludN} alt="Bludnymph" width={200} height={200} />
+                        </div>
+                        <div className="transition ease-in-out hover:scale-110">
+                        <Image src={dizzy} alt="DizzyIsDead" width={200} height={200} />
+                        </div>
+                        <div className="transition ease-in-out hover:scale-110">
+                        <Image src={complete} alt="Complete" width={200} height={200} />
+                        </div>
+                        <div className="transition ease-in-out hover:scale-110">
+                        <Image src={teonG} alt="TeonGibbs" width={200} height={200} />
+                        </div>
+                    </nav>
+                    <p className="text-white text-1xl p-8 md:mx-96">
+                        Every song has a story—our
+                        job is to make sure yours is
+                        heard in its purest, most
+                        powerful form. At The 756, we
+                        provide a professional space
+                        where creativity flourishes
+                        and sound quality is uncompromising. From production to
+                        mixing and mastering, we handle every detail so you can
+                        focus on what matters: the
+                        music.
+                    </p>
+                </div>
             </section>
 
             <section className="h-screen w-screen bg-bannerAltImg bg-repeat bg-cover bg-bottom">
@@ -119,7 +121,7 @@ export default function portfolio() {
                         <h1>Checkout Our Engineering Breakdowns</h1>
                     </div>
                     <div>
-                        <p className="text-white text-1xl py-8 px-48">
+                        <p className="text-white text-1xl py-8 md:px-48">
                             Our engineering breakdowns provide an in-depth look at the process behind the music. 
                             From the initial idea to the final mix, we take you through every step of the production 
                             process, giving you a behind-the-scenes look at how we bring your sound to life.

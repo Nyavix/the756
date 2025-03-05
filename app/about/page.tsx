@@ -88,10 +88,10 @@ export default function about() {
             </section>
 
             <section className="w-screen bg-black">
-                <div className="flex justify-center items-center w-full px-16 bg-blackOverlay">
+                <div className="flex justify-center items-center w-full md:px-16 bg-blackOverlay">
                     <div className="md:p-16 bg-black bg-opacity-30 rounded-2xl">
                         <h1 className="text-4xl text-center py-8 font-bold">Our Studio</h1>
-                        <div className="shadow-inner flex flex-col justify-between items-center gap-10 px-6 py-8">
+                        <div className="shadow-inner flex flex-col justify-between items-center md:gap-10 px-6 py-8">
                             <div className="flex flex-col justify-center items-center md:w-1/2">
                                 <Image src={Studio} alt="Studio" width={700} className="shadow-xl"/>
                             </div>
@@ -167,9 +167,9 @@ export default function about() {
             </section>
 
             <section className="w-screen bg-black">
-                <div className="flex justify-center items-center w-full p-16 bg-blackOverlay">
-                        <div className="shadow-inner flex justify-between items-center gap-10 px-6 py-8">
-                            <div className="flex flex-col justify-center w-1/2">
+                <div className="flex justify-center items-center w-full md:p-16 bg-blackOverlay">
+                        <div className="shadow-inner flex md:flex-row flex-col justify-between items-center md:gap-10 px-6 py-8">
+                            <div className="flex flex-col justify-center md:w-1/2">
                                 <h1 className="text-2xl text-center py-8 font-bold">Our Mission</h1>
                                 <p className="text-sm py-4">
                                     At The 756, every song tells a story, and our goal is to ensure yours is heard in its most authentic and 
@@ -182,7 +182,7 @@ export default function about() {
                                     .
                                 </p>
                             </div>
-                            <div className="flex flex-col justify-center items-center  w-1/2">
+                            <div className="flex flex-col justify-center items-center  md:w-1/2">
                                 <Image src={record} alt="Record" width={600} className="shadow-xl"/>
                             </div>
                         </div>
