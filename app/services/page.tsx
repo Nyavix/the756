@@ -27,7 +27,7 @@ export default function services() {
             </section>
 
             <section className="h-full w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
-                <div className="flex justify-center items-center gap-10">
+                <div className="flex justify-center items-center md:gap-10">
                     <div className="transition ease-in-out hover:scale-105">
                         <Image src={mmbeginner} alt="beginner" width={300}/>
                     </div>
@@ -62,8 +62,8 @@ export default function services() {
             </section>
 
             <section className="h-full w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
-                <div  className="flex justify-center items-center py-16">
-                    <div className="grid grid-cols-3 gap-4">
+                <div  className="flex justify-center items-center py-6 md:py-16">
+                    <div className="grid grid-cols-3 md:gap-4">
                         <div className="transition ease-in-out hover:scale-105">
                             <Image src={bfullm} alt="bfullm" width={250}/>
                         </div>
