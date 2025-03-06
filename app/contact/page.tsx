@@ -11,7 +11,7 @@ import yt from "../../public/graphics/youtube.png";
 import li from "../../public/graphics/tiktok.png";
 import { useState } from "react";
 
-export default function contact() {
+export default function Contact() {
     const [result, setResult] = useState<Record<string, string>>({});
     const [loading, setLoading] = useState<boolean>(false);
 
@@ -31,7 +31,7 @@ export default function contact() {
         <div className="overflow-clip font-main">
             <Header currentPage="contact" />
             <section className="w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
-                <div className="flex justify-center items-center w-full  pt-16 px-16 bg-blackOverlay gap-4">
+                <div className="flex justify-center items-center w-full z-0 pt-16 px-16 bg-blackOverlay gap-4">
                     <div className="md:w-1/2 p-16 flex flex-col justify-center items-center shadow-xl">
                         <h1 className="text-4xl p-4">Get in touch</h1>
                         <p className="p-4">Great Music Starts With a Conversation. Let’s Connect.</p>

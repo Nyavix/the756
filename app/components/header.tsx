@@ -50,13 +50,13 @@ function Header({ currentPage = "" }: HeaderProps) {
                     </button>
                 </div>
             </div>
-            <div className={`md:hidden bg-black py-1 transition-all duration-300 ease-in-out ${isOpen ? "bg-opacity-100 " : "-translate-y-96 bg-opacity-0"}`}>
+            <div className={`md:hidden bg-black py-1 transition-all duration-300 ease-in-out ${isOpen ? "bg-opacity-100" : "hidden -translate-y-96 bg-opacity-0"}`}>
                 <nav className="flex flex-col justify-center items-center lg:gap-8 gap-6 font-medium">
                     {Menus.map((Menu: string, i: number) => (
                         <Link 
                             key={i} 
                             href={Menu === "/" ? "/" : `/${Menu}`}
-                            className={`border w-1/2 py-1 text-center capitalize transition ease-in-out hover:scale-110 ${formattedPage === Menu ? 'underline' : ''}`}
+                            className={`w-1/2 py-1 text-center capitalize transition ease-in-out hover:scale-110 ${formattedPage === Menu ? 'underline' : ''}`}
                         >
                             {Menu === "/" ? "home" : Menu}
                         </Link>
