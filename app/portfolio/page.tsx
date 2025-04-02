@@ -43,7 +43,7 @@ export default function portfolio() {
                         
                     </div>
                     <div className="md:w-1/2 flex flex-col justify-center items-center md:py-36 py-4 shadow-xl">
-                        <nav className="flex justify-center items-center gap-24 p-8 w-fit">
+                        <nav className="flex justify-center items-center gap-12 md:gap-24 p-8 w-screen md:w-fit">
                             <Link rel="stylesheet" href="https://open.spotify.com/playlist/074YJaBM2Nq0jQhtPpmW6h?si=qaIOrW-bTouzx8NygX3z5Q&pi=ky9yuNrAQN6Qj"  
                                 className="transition ease-in-out hover:scale-110">
                                 <Image src={spotifyLogo} alt="Spotify" width={50} height={50} />
@@ -64,7 +64,7 @@ export default function portfolio() {
                         <div className="flex justify-center w-full items-center">
                         <iframe style={{ borderRadius: "12px" }} 
                         src="https://open.spotify.com/embed/playlist/074YJaBM2Nq0jQhtPpmW6h?utm_source=generator" 
-                        width="75%" height="352" frameBorder="0" 
+                        width="90% md:75%" height="352" frameBorder="0" 
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                         loading="lazy" title="Spotify Playlist" className="shadow-lg transition-all ease-in-out hover:shadow-2xl hover:animate-wiggle"></iframe>
                         </div>
@@ -79,11 +79,23 @@ export default function portfolio() {
             </section>
 
             <section className="h-3/4 w-screen flex justify-center flex-col items-center bg-bannerAltImg bg-repeat bg-cover bg-bottom">
-                <div className="bg-blackOverlay w-full h-full flex flex-col justify-center items-center">
-                    <h1 className="text-white text-6xl p-6">
+                <div className="bg-blackOverlay w-full h-full flex flex-col justify-center items-center md:py-16">
+                    <h1 className="text-white text-6xl p-6 text-center">
                         Happy Clients
                     </h1>
-                    <nav className="md:flex md:flex-row grid grid-auto-flow:row grid-cols-2 grid-rows-3 justify-center items-center gap-10 w-full">
+                    <p className="text-white text-1xl py-4 px-2 md:mx-96">
+                        Every song has a story—our
+                        job is to make sure yours is
+                        heard in its purest, most
+                        powerful form. At The 756, we
+                        provide a professional space
+                        where creativity flourishes
+                        and sound quality is uncompromising. From production to
+                        mixing and mastering, we handle every detail so you can
+                        focus on what matters: the
+                        music.
+                    </p>
+                    <nav className="md:flex md:flex-row grid grid-auto-flow:row grid-cols-2 grid-rows-3 justify-center items-center md:gap-10 w-full">
                         <div className="transition ease-in-out hover:scale-110">
                             <Image src={chainS} alt="TheChainsmokers" width={200} height={200} />
                         </div>
@@ -100,24 +112,12 @@ export default function portfolio() {
                         <Image src={teonG} alt="TeonGibbs" width={200} height={200} />
                         </div>
                     </nav>
-                    <p className="text-white text-1xl p-8 md:mx-96">
-                        Every song has a story—our
-                        job is to make sure yours is
-                        heard in its purest, most
-                        powerful form. At The 756, we
-                        provide a professional space
-                        where creativity flourishes
-                        and sound quality is uncompromising. From production to
-                        mixing and mastering, we handle every detail so you can
-                        focus on what matters: the
-                        music.
-                    </p>
                 </div>
             </section>
 
-            <section className="h-screen w-screen bg-bannerAltImg bg-repeat bg-cover bg-bottom">
-                <div className="flex flex-col justify-center items-center w-full h-screen px-16 bg-blackOverlay shadow-inner">
-                    <div className="text-white text-4xl py-8 font-bold">  
+            <section className="w-screen bg-bannerAltImg bg-repeat bg-cover bg-bottom">
+                <div className="flex flex-col justify-center items-center w-full px-4 md:px-16 bg-blackOverlay shadow-inner">
+                    <div className="text-white text-4xl py-8 font-bold text-center">  
                         <h1>Checkout Our Engineering Breakdowns</h1>
                     </div>
                     <div>

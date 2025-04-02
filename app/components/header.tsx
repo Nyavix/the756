@@ -61,6 +61,11 @@ function Header({ currentPage = "" }: HeaderProps) {
                             {Menu === "/" ? "home" : Menu}
                         </Link>
                     ))}
+                    <div className="flex justify-center transition ease-in-out hover:scale-110 w-1/2 py-4">
+                    <Link href="/contact" className="font-bold text-sm text-center font-main border-2 text-black border-zinc-100 bg-white p-2 rounded-full">
+                        Work With Us
+                    </Link>
+                </div>
                 </nav>
             </div>
             

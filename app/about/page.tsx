@@ -22,7 +22,7 @@ export default function about() {
                 <div className="flex justify-center items-center w-full pt-36 md:px-16 bg-blackOverlay">
                     <div className="md:px-16 bg-black bg-opacity-30 rounded-2xl">
                         <h1 className="text-4xl text-center py-8 font-bold">Meet The Team</h1>
-                        <div className="shadow-inner flex md:flex-row flex-col justify-between items-center gap-10 px-6 py-8">
+                        <div className="shadow-inner flex md:flex-row flex-col justify-center items-center gap-10 px-6 py-8">
                             <div className="flex flex-col justify-center items-center md:w-1/4">
                                 <Image src={Drew} alt="Drew" width={200} className="shadow-xl py-4"/>
                                 <p className="py-2 font-bold">
@@ -36,20 +36,6 @@ export default function about() {
                                     An entrepreneur since high school, she’s built multiple successful businesses and assembled a team 
                                     of driven creatives. Her passion for philanthropy and community-building makes her a powerhouse 
                                     collaborator, turning visions into reality.
-                                </p>
-                            </div>
-                            <div className="flex flex-col justify-center items-center md:w-1/4">
-                                <Image src={Taz} alt="Taz" width={200} className="shadow-xl py-4"/>
-                                <p className="py-2 font-bold">
-                                    Taz Maclean
-                                </p>
-                                <p className="py-2">
-                                    Composer | Songwriter | Multi-Instrumentalist 
-                                </p>
-                                <p className="text-sm py-4 ">
-                                With 15 years of experience, Taz is a skilled musician and composer with a deep understanding of music 
-                                theory and instrumentation. Mastering Ableton with precision, he brings passion and technical expertise 
-                                to every project, crafting dynamic compositions that resonate with authenticity and emotion.
                                 </p>
                             </div>
                             <div className="flex flex-col justify-center items-center md:w-1/4">

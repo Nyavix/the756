@@ -20,7 +20,7 @@ export default function services() {
         <div className="overflow-clip font-main">
             <Header currentPage="services" />
 
-            <section className="w-screen h-64 bg-bannerImg bg-repeat bg-cover bg-top">
+            <section className="w-screen h-64 bg-bannerImg bg-repeat md:bg-cover bg-top">
                 <div className="flex justify-center items-end py-16 w-full h-64 bg-blackOverlay">
                     <h1 className="text-4xl font-bold text-center drop-shadow-lg">Mixing and Mastering Services</h1>
                 </div>
@@ -28,22 +28,26 @@ export default function services() {
 
             <section className="h-full w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
                 <div className="flex justify-center items-center md:gap-10">
-                    <div className="transition ease-in-out hover:scale-105">
+                    <div className="flex flex-col md:flex-row justify-center md:gap-10">
+                        <div className="transition ease-in-out hover:scale-105">
                         <Image src={mmbeginner} alt="beginner" width={300}/>
+                        </div>
+                        <div className="transition ease-in-out hover:scale-105">
+                            <Image src={mmintermediate} alt="beginner" width={300} />
+                        </div>
                     </div>
-                    <div className="transition ease-in-out hover:scale-105">
-                        <Image src={mmintermediate} alt="beginner" width={300} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-105">
-                        <Image src={mmadvanced} alt="beginner" width={300} />
-                    </div>
-                    <div className="transition ease-in-out hover:scale-105">
-                        <Image src={mmastering} alt="beginner" width={300} />
+                    <div className="flex flex-col md:flex-row justify-center md:gap-10">
+                        <div className="transition ease-in-out hover:scale-105">
+                            <Image src={mmadvanced} alt="beginner" width={300} />
+                        </div>
+                        <div className="transition ease-in-out hover:scale-105">
+                            <Image src={mmastering} alt="beginner" width={300} />
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="w-screen h-64 bg-bannerImg bg-repeat bg-cover bg-center">
+            <section className="w-screen h-64 bg-bannerImg bg-repeat md:bg-cover bg-center">
                 <div className="flex justify-center items-center py-16 w-full h-64">
                     <h1 className="text-4xl font-bold text-center drop-shadow-lg">Beats</h1>
                 </div>
@@ -55,7 +59,7 @@ export default function services() {
                 </div>
             </section>
 
-            <section className="w-screen h-64 bg-bannerImg bg-repeat bg-cover bg-bottom">
+            <section className="w-screen h-64 bg-bannerImg bg-repeat md:bg-cover bg-bottom">
                 <div className="flex justify-center items-center py-16 w-full h-64">
                     <h1 className="text-4xl font-bold text-center drop-shadow-lg">Beat Licensing</h1>
                 </div>

@@ -32,7 +32,9 @@ export default function Contact() {
             <Header currentPage="contact" />
             <section className="w-screen bg-bannerMarImg bg-repeat bg-cover bg-top">
                 <div className="flex justify-center items-center w-full z-0 pt-16 px-16 bg-blackOverlay gap-4">
-                    <div className="md:w-1/2 p-16 flex flex-col justify-center items-center shadow-xl">
+                    <div className="md:w-1/2 md:p-16 py-16 flex flex-col justify-center items-center shadow-xl">
+
+                    
                         <h1 className="text-4xl p-4">Get in touch</h1>
                         <p className="p-4">Great Music Starts With a Conversation. Let’s Connect.</p>
                         <div className="flex justify-between gap-10 p-2">
@@ -49,33 +51,10 @@ export default function Contact() {
                             <Image src={li} alt="LinkedIn" width={26} height={26} />
                             </Link>
                         </div>
-                        <form className="flex flex-col justify-center items-center gap-4">
-                            <div className="flex justify-between items-center gap-4">
-                                <div>
-                                    <h1 className="pb-2">First Name</h1>
-                                    <input type="text" placeholder="Jane" className="p-2 rounded-md text-black"/>
-                                </div>
-                                <div>
-                                    <h1 className="pb-2">Last Name</h1>
-                                    <input type="text" placeholder="Doe" className="p-2 rounded-md text-black"/>
-                                </div>
-                            </div>
-                            <div className="w-full">
-                                <h1 className="pb-2">Email</h1>
-                                <input type="email" placeholder="Email" className="p-2 rounded-md w-full text-black"/>
-                            </div>
-                            <div className="w-full">
-                                <h1 className="pb-2">Subject</h1>
-                                <input type="email" placeholder="Subject" className="p-2 rounded-md w-full text-black"/>
-                            </div>
-                            <div className="w-full">
-                                <h1>Message</h1>
-                                <textarea className="w-full h-36 p-2 my-2 rounded-md text-black" placeholder="Message"></textarea>
-                            </div>
-                            <button onClick={sendEmail} className="bg-Meteorite w-full py-2 px-6 rounded-lg">Lets Talk</button>
-                            <div className="my-4">{JSON.stringify(result)}</div>
-                            {loading && <div className="my-4">Processing...</div>}
-                        </form>
+                        <div className="py-4">
+                            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                            <div className="elfsight-app-1fe2cda6-0b66-4135-8b10-39376e2fc449" data-elfsight-app-lazy></div>
+                        </div>
                     </div>
                 </div>
             </section>

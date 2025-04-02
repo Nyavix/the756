@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       <section className="w-screen bg-zinc-950 flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center max-w-screen-xl px-16  text-center">
+        <div className="flex flex-col justify-center items-center max-w-screen-xl px-4  text-center">
           <div className="py-16">
             <h1 className="text-4xl font-bold py-8">Unleash Your Sound with Our Expertise</h1>
             <p>At The 756, we specialize in transforming your musical 
@@ -116,7 +116,7 @@ export default function Home() {
         
       <section className="w-screen bg-gradient-to-b from-zinc-950 to-Crail flex justify-center items-center">
       <div className="flex md:flex-row flex-col justify-center items-center max-w-screen-xl md:p-16">
-          <div className="md:w-1/2 flex flex-col justify-center m-8">
+          <div className="md:w-1/2 flex flex-col justify-center m-4">
             <h1 className="py-16 font-bold text-4xl">Experience Unmatched Sound Quality at The 756</h1>
             <p>At The 756 Studio, we provide a professional environment that fosters creativity 
               and collaboration. Our state-of-the-art equipment ensures that every note is 
