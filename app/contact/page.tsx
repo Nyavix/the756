@@ -9,23 +9,8 @@ import fb from "../../public/graphics/facebook.png";
 import ig from "../../public/graphics/instagram.png";
 import yt from "../../public/graphics/youtube.png";
 import li from "../../public/graphics/tiktok.png";
-import { useState } from "react";
 
 export default function Contact() {
-    const [result, setResult] = useState<Record<string, string>>({});
-    const [loading, setLoading] = useState<boolean>(false);
-
-    const sendEmail = () => {
-        setLoading(true);
-
-        fetch('/api/emails', {
-            method: 'POST'
-        })
-            .then(response => response.json())
-            .then(data => setResult(data))
-            .catch(error => setResult(error))
-            .finally(() => setLoading(false))
-    }
 
     return (
         <div className="overflow-clip font-main">
