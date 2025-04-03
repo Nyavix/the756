@@ -3,7 +3,6 @@ import Footer from "../components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
-import Taz from "../../public/graphics/BioPics/Taz.png";
 import Drew from "../../public/graphics/BioPics/Drew.png";
 import Deus from "../../public/graphics/BioPics/Deus.png";
 import Nvikelo from "../../public/graphics/BioPics/Nvikelo.png";
