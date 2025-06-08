@@ -2,14 +2,7 @@
 
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Image from "next/image";
-import Link from "next/link";
 import FormComponent from "../components/form";
-
-import fb from "../../public/graphics/facebook.png";
-import ig from "../../public/graphics/instagram.png";
-import yt from "../../public/graphics/youtube.png";
-import li from "../../public/graphics/tiktok.png";
 
 export default function Contact() {
 
