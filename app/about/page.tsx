@@ -75,8 +75,8 @@ export default function about() {
             <section className="w-screen bg-black">
                 <div className="flex justify-center items-center w-full md:px-16 bg-blackOverlay">
                     <div className="md:p-16 bg-black bg-opacity-30 rounded-2xl">
-                        <h1 className="text-4xl text-center py-8 font-bold">Our Studio</h1>
-                        <div className="shadow-inner flex flex-col justify-between items-center md:gap-10 px-6 py-8">
+                        {/* <h1 className="text-4xl text-center py-8 font-bold">Our Studio</h1> */}
+                        <div className="shadow-inner flex flex-row justify-between items-center md:gap-10 px-6 py-8">
                             <div className="flex flex-col justify-center items-center md:w-1/2">
                                 <Image src={Studio} alt="Studio" width={700} className="shadow-xl"/>
                             </div>

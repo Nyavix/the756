@@ -23,7 +23,30 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif, Arial, Helvetica;
+  color: #EAEAEA;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+.inter-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #E29578;
+}
+
+.bg-accent-color {
+  background-color: #E29578;
+}
+
+.hover-bg-accent-color:hover {
+  background-color: #E29578;
 }
 
 .sr-only {
@@ -36,4 +59,19 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* Hero text character animation */
+.hero-title .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: CharFadeInUp 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+
+@keyframes CharFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

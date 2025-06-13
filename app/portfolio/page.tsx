@@ -78,7 +78,7 @@ export default function portfolio() {
                 </div>
             </section>
 
-            <section className="h-3/4 w-screen flex justify-center flex-col items-center bg-bannerAltImg bg-repeat bg-cover bg-bottom">
+            <section className="h-3/4 w-screen flex justify-center flex-col items-center bg-bannerAltImg bg-no-repeat bg-fixed bg-cover bg-bottom">
                 <div className="bg-blackOverlay w-full h-full flex flex-col justify-center items-center md:py-16">
                     <h1 className="text-white text-6xl p-6 text-center">
                         Happy Clients

@@ -175,9 +175,9 @@ type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
                     disabled={status === 'submitting' || status === 'success'}
                     className={`w-full flex items-center justify-center px-6 py-4 text-lg font-bold text-white rounded-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-opacity-50 ${
                         status === 'submitting' ? 'bg-gray-500 cursor-not-allowed' :
-                        status === 'success'   ? 'bg-green-600 cursor-not-allowed' :
+                        status === 'success'   ? 'bg-PurpleHeart cursor-not-allowed' :
                         status === 'error'     ? 'bg-red-600 hover:bg-red-700 focus:ring-red-400' :
-                                                'bg-blue-600 hover:bg-blue-700 focus:ring-blue-400'
+                                                'bg-Meteorite hover:bg-Mirage focus:ring-blue-400'
                     }`}
                 >
                 {getButtonContent()}
