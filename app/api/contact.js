@@ -2,7 +2,6 @@
 
 import { Resend } from 'resend';
 
-
 // Initialize Resend with the API key from your environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -20,17 +19,17 @@ export default async function handler(req, res) {
       // The magic happens here: sending the email with Resend
       const { data, error } = await resend.emails.send({
         // The "from" address must be a verified domain on your Resend account.
-      // For development, Resend provides a default "onboarding@resend.dev" address. Ensure this is a verified domain email in production.
-      from: process.env.RESEND_FROM_EMAIL || 'Contact Form <onboarding@resend.dev>', 
-      to: [process.env.CONTACT_FORM_TO_EMAIL], // The email address where you want to receive messages
+        // For development, Resend provides a default "onboarding@resend.dev" address.
+        from: 'Contact Form <onboarding@resend.dev>', 
+        to: ['your-personal-email@example.com'], // The email address where you want to receive messages
         subject: `New Message from ${name}`,
         reply_to: email, // Set the sender's email as the reply-to address
         // You can use simple text or create a more complex React component for the email body
         html: `<p>You have a new contact form submission:</p>
-              <p><strong>Name:</strong> ${name}</p>
-              <p><strong>Email:</strong> ${email}</p>
-              <p><strong>Message:</strong></p>
-              <p>${message}</p>`,
+               <p><strong>Name:</strong> ${name}</p>
+               <p><strong>Email:</strong> ${email}</p>
+               <p><strong>Message:</strong></p>
+               <p>${message}</p>`,
       });
 
       // If Resend returns an error
