@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef, ReactNode, CSSProperties, FC } from 'react';
+//import React, { useState, useEffect, useRef, ReactNode, CSSProperties, FC } from 'react';
 
 import Header from "./components/header";
 import ScrollAnimator from "./components/scrollanimator"; // Import the external component
@@ -24,71 +24,50 @@ import { RiTeamLine } from "react-icons/ri";
 import { LuBoxes } from "react-icons/lu";
 
 //--- Component: AnimatedTitle ---//
-interface AnimatedTitleProps {
-  children: ReactNode;
-}
-const AnimatedTitle: FC<AnimatedTitleProps> = ({ children }) => {
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    const title = titleRef.current;
-    if (title && !title.hasAttribute('data-animated')) {
-        const originalHTML = title.innerHTML;
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = originalHTML;
-        title.innerHTML = '';
-        title.setAttribute('data-animated', 'true');
-        let charCount = 0;
-        Array.from(tempDiv.childNodes).forEach(node => {
-            if (node.nodeType === Node.TEXT_NODE && node.textContent) {
-                node.textContent.split('').forEach(char => {
-                    const span = document.createElement('span');
-                    span.className = 'char';
-                    span.innerHTML = char === ' ' ? '&nbsp;' : char;
-                    span.style.animationDelay = `${charCount * 25}ms`;
-                    title.appendChild(span);
-                    charCount++;
-                });
-            } else if (node.nodeType === Node.ELEMENT_NODE) {
-                const elementNode = node as HTMLElement;
-                const wrapper = elementNode.cloneNode(false) as HTMLElement;
-                if (elementNode.textContent) {
-                    elementNode.textContent.split('').forEach(char => {
-                        const span = document.createElement('span');
-                        span.className = 'char';
-                        span.innerHTML = char === ' ' ? '&nbsp;' : char;
-                        span.style.animationDelay = `${charCount * 25}ms`;
-                        wrapper.appendChild(span);
-                        charCount++;
-                    });
-                }
-                title.appendChild(wrapper);
-            }
-        });
-    }
-  }, []);
-  return <h2 ref={titleRef} className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-tight font-semibold">{children}</h2>;
-};
-
-//--- Main Page Component ---//
-interface Artist {
-  name: string;
-  description: string;
-  imageUrl: string;
-  delay: number;
-}
-interface Release {
-  artist: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  align: 'left' | 'right';
-}
-// Placeholder data for artists - consider fetching from a CMS or API in a real application
-const artists: Artist[] = [{name: 'Aethel', description: 'Glitch-infused ambient soundscapes.', imageUrl: 'https://placehold.co/600x800/2E2E2E/FFFFFF?text=Aethel', delay: 0}, {name: 'Cygnus', description: 'Industrial techno with a raw edge.', imageUrl: 'https://placehold.co/600x800/404040/FFFFFF?text=Cygnus', delay: 200}, {name: 'Kora', description: 'Deconstructed club and vocal experiments.', imageUrl: 'https://placehold.co/600x800/1A1A1A/FFFFFF?text=Kora', delay: 400}];
-
-// The 'releases' data is defined but not currently used in the component.
-const releases: Release[] = [{artist: 'AETHEL', title: 'Void Echoes', description: 'A journey through disintegrating digital memories and hauntingly beautiful noise. The debut LP from Aethel redefines ambient music for a fractured world.', imageUrl: 'https://placehold.co/600x600/3A3A3A/FFFFFF?text=Void+Echoes', align: 'left'}, {artist: 'CYGNUS', title: 'Steel Veins EP', description: "Four tracks of relentless, punishing techno. 'Steel Veins' is a visceral, sweat-drenched soundtrack for late-night warehouses and concrete jungles.", imageUrl: 'https://placehold.co/600x600/505050/FFFFFF?text=Steel+Veins', align: 'right'}];
-
+// interface AnimatedTitleProps {
+//   children: ReactNode;
+// }
+// const AnimatedTitle: FC<AnimatedTitleProps> = ({ children }) => {
+//   const titleRef = useRef<HTMLHeadingElement>(null);
+//   useEffect(() => {
+//     const title = titleRef.current;
+//     if (title && !title.hasAttribute('data-animated')) {
+//         const originalHTML = title.innerHTML;
+//         const tempDiv = document.createElement('div');
+//         tempDiv.innerHTML = originalHTML;
+//         title.innerHTML = '';
+//         title.setAttribute('data-animated', 'true');
+//         let charCount = 0;
+//         Array.from(tempDiv.childNodes).forEach(node => {
+//             if (node.nodeType === Node.TEXT_NODE && node.textContent) {
+//                 node.textContent.split('').forEach(char => {
+//                     const span = document.createElement('span');
+//                     span.className = 'char';
+//                     span.innerHTML = char === ' ' ? '&nbsp;' : char;
+//                     span.style.animationDelay = `${charCount * 25}ms`;
+//                     title.appendChild(span);
+//                     charCount++;
+//                 });
+//             } else if (node.nodeType === Node.ELEMENT_NODE) {
+//                 const elementNode = node as HTMLElement;
+//                 const wrapper = elementNode.cloneNode(false) as HTMLElement;
+//                 if (elementNode.textContent) {
+//                     elementNode.textContent.split('').forEach(char => {
+//                         const span = document.createElement('span');
+//                         span.className = 'char';
+//                         span.innerHTML = char === ' ' ? '&nbsp;' : char;
+//                         span.style.animationDelay = `${charCount * 25}ms`;
+//                         wrapper.appendChild(span);
+//                         charCount++;
+//                     });
+//                 }
+//                 title.appendChild(wrapper);
+//             }
+//         });
+//     }
+//   }, []);
+//   return <h2 ref={titleRef} className="hero-title text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-tight font-semibold">{children}</h2>;
+// };
 
 export default function Home() {
   return (
