@@ -4,6 +4,7 @@
 import Header from "./components/header";
 import ScrollAnimator from "./components/scrollanimator"; // Import the external component
 import Footer from "./components/footer";
+import FeaturedArtists from "./components/featuredartists";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -107,8 +108,8 @@ export default function Home() {
           <div className="flex md:flex-row flex-col-reverse justify-center items-center max-w-screen-xl md:py-16">
             <div className="md:w-1/2 md:p-16 p-4">
               <div className="py-8">
-                <ScrollAnimator className="font-bold text-2xl py-2">Welcome to The 756 Studio: Where Your Sound Comes to Life</ScrollAnimator>
-                <ScrollAnimator className="py-4">At The 756 Studio, we combine cutting-edge technology with a passion 
+                <ScrollAnimator className="font-bold text-2xl py-2">Welcome to The 756: Where Your Sound Comes to Life</ScrollAnimator>
+                <ScrollAnimator className="py-4">At The 756, we combine cutting-edge technology with a passion 
                   for music. Our experienced team is dedicated to bringing your creative 
                   vision to reality.</ScrollAnimator>
               </div>
@@ -134,6 +135,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Our Artists Section */}
+
+      {/* This is the "Our Artists" section itself. 
+        Note: I am using 'from-red-700' as a proxy for 'from-Crail'. 
+        Please replace 'red-700' with 'Crail' in your actual project.
+      */}
+      <FeaturedArtists />
 
       {/* Services Section */}
 
@@ -179,7 +188,7 @@ export default function Home() {
             <ScrollAnimator>
               <h1 className="py-16 font-bold text-4xl">Experience Unmatched Sound Quality at The 756</h1>
             </ScrollAnimator>
-            <ScrollAnimator>At The 756 Studio, we provide a professional environment that fosters creativity 
+            <ScrollAnimator>At The 756, we provide a professional environment that fosters creativity 
               and collaboration. Our state-of-the-art equipment ensures that every note is 
               captured with precision and clarity.</ScrollAnimator>
             <ScrollAnimator className="py-16 gap-3 flex justify-start">

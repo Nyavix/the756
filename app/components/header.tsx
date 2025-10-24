@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import logo from '../../public/graphics/756-Logo.png';
+import logo from '../../public/graphics/756-Logo-Horizontal.png';
 import { CiMenuBurger } from "react-icons/ci";
 
 const Menus = ["/", "about", "portfolio", "services", "contact"];
